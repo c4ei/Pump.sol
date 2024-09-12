@@ -103,7 +103,6 @@ contract MemeToken is ERC20 {
         tokensPerETH = remainingTokens * 1e18 / contractETHBalance;
     }
 
-
     function quoteBuy(uint _ethAmount) public view returns (uint tokensPerETH) {
         uint currentTokensPerETH = getCurrentPrice();
         uint tokenAmount = _ethAmount * currentTokensPerETH / 1e18;
