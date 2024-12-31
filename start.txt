@@ -1,0 +1,17 @@
+start.txt
+###############################
+"ethers": "^6.13.4",
+###############################
+scripts/deploy.js
+hardhat.config.js
+###############################
+
+yarn add @nomiclabs/hardhat-ethers
+npm install @openzeppelin/contracts-upgradeable
+
+npx hardhat compile
+    Compiled 6 Solidity files successfully (evm target: paris).
+
+npx hardhat run scripts/deploy.js --network AAH
+Deploying AahTokenFactory contract...
+AahTokenFactory deployed to: 0x87b5949A0B6a53eA354058780f785C9bcd9C70Ac
